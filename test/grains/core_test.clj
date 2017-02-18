@@ -6,6 +6,7 @@
 
   (testing "knowing square grains"
     (is (= 1 (grains-on 1)))
+    (is (= 2 (grains-on 2)))
     )
 
   )

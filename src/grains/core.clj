@@ -3,4 +3,4 @@
 
 
 (defn grains-on [square]
-  1)
+  square)
