@@ -10,5 +10,9 @@
     (is (= 4 (grains-on 3)))
     )
 
+  (testing "the number of grains in one square is the double of the previous one"
+    (is (= (* 2 (grains-on 0)) (grains-on 41)))
+    )
+
 
   )
