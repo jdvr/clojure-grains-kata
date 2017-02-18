@@ -1,36 +1,15 @@
-# grains
+# Grains
 
-FIXME: description
+Write a program that calculates the number of grains of wheat on a chessboard given that the number on each square doubles.
 
-## Installation
+There once was a wise servant who saved the life of a prince. The king promised to pay whatever the servant could dream up. Knowing that the king loved chess, the servant told the king he would like to have grains of wheat. One grain on the first square of a chess board. Two grains on the next. Four on the third, and so on.
 
-Download from http://example.com/FIXME.
+There are 64 squares on a chessboard.
 
-## Usage
+Write a program that shows
+- how many grains were on each square, and
+- the total number of grains
 
-FIXME: explanation
+## Source
 
-    $ java -jar grains-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+JavaRanch Cattle Drive, exercise 6 [view source](http://www.javaranch.com/grains.jsp)
