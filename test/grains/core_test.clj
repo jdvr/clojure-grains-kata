@@ -3,5 +3,9 @@
             [grains.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+
+  (testing "knowing square grains"
+    (is (= 1 (grains-on 1)))
+    )
+
+  )
