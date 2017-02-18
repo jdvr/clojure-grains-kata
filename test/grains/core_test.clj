@@ -11,7 +11,9 @@
     )
 
   (testing "the number of grains in one square is the double of the previous one"
-    (is (= (* 2 (grains-on 0)) (grains-on 41)))
+    (is (= (* 2 (grains-on 20)) (grains-on 21)))
+    (is (= (* 2 (grains-on 30)) (grains-on 31)))
+    (is (= (* 2 (grains-on 40)) (grains-on 41)))
     )
 
 
