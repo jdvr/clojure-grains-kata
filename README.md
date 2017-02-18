@@ -13,3 +13,7 @@ Write a program that shows
 ## Source
 
 JavaRanch Cattle Drive, exercise 6 [view source](http://www.javaranch.com/grains.jsp)
+
+## Trying this...
+- test: ```lein test```
+- run main: ```lein run```
