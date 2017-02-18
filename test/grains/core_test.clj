@@ -1,6 +1,14 @@
 (ns grains.core-test
   (:require [clojure.test :refer :all]
-            [grains.core :refer :all]))
+            [grains.core :refer :all]
+            [clojure.math.numeric-tower :as math]))
+
+;; All this problem solution has been extracting reading this
+;; Summing geometric sequence, calculate nth term of a geometric sequence...
+;; http://www.mathsisfun.com/algebra/sequences-sums-geometric.html
+
+(defn sum-geometric-sequence [start common-ration count]
+  (* start (/ (- 1 (math/expt common-ration count)) (- 1 common-ration))))
 
 (deftest a-test
 
@@ -16,5 +24,9 @@
     (is (= (* 2 (grains-on 40)) (grains-on 41)))
     )
 
-
+  (testing "total of grains"
+    (is (= (sum-geometric-sequence 1 2 64) (total-grains)))
+    )
   )
+
+
