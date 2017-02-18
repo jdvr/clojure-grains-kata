@@ -1,8 +1,11 @@
 (ns grains.core
-  (:gen-class))
-
-(def powers-of-two (iterate (partial * 2) 1))
-
+  (:gen-class)
+  (:require [clojure.math.numeric-tower :as math]))
 
 (defn grains-on [square]
-  (last (take square powers-of-two)))
+  (math/expt 2 (dec square)))
+
+(defn total-grains []
+  (reduce + (map grains-on (range 1 (inc 64)))))
+
+
